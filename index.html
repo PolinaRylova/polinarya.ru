@@ -2,54 +2,54 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Frontend Developer - Polina Rylova</title>
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" type="text/css">
     </head>
     <body>
 
         <header>
-            <div class="centering-container">
-                <div class="logo"><a href="#">Polina Rylova</a></div>
+            <div class="centering-container clearfix">
+                <div class="logo"><a href="#business-card">Polina Rylova</a></div>
                 <nav>
                     <ul class="header-navigation">
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About me</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
         <div class="main-content">
-            <section class="business-card">
+            <section class="business-card" id="business-card">
                 <div class="centering-container">
-                    <div class="photo"><img src="img/photo.jpg" width="250" height="250" alt="Photo by Polina Rylova"></div>
+                    <div class="photo"><img src="img/photo.png" width="250" height="250" alt="Photo by Polina Rylova"></div>
                     <div class="info">
                         <h1>Frontend Developer</h1>
                         <div class="skills">
                             <ul class="ul-1">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JS</li>
+                            </ul>
+                            <ul class="ul-2">
+                                <li>Bootstrap</li>
+                                <li>JQuery</li>
+                                <li>Angular JS</li>
+                            </ul>
+                            <ul class="ul-3">
                                 <li>Cross Browser</li>
                                 <li>Responsive</li>
                                 <li>Progressive Enhancement</li>
                                 <li>Semantic Layout</li>
                             </ul>
-                            <ul class="ul-2">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JS</li>
-                            </ul>
-                            <ul class="ul-3">
-                                <li>Bootstrap</li>
-                                <li>JQuery</li>
-                                <li>Angular JS</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <div class="centering-container">
                     <h1>Portfolio</h1>
                     <ul class="projects">
@@ -68,7 +68,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="centering-container">
                     <h1>Contact me</h1>
                     <div class="top-block">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="centering-container">
                     <h1>About me</h1>
                     <p><b>Education: </b>
@@ -100,7 +100,7 @@
         </div>
 
         <footer>
-            <div class="copyright">Copyright © 2015 - Polina Rylova. Design by Start Bootstrap. Frontend Developer - Polina Rylova.</div>
+            <div class="copyright">Copyright © 2015 - Polina Rylova.</div>
         </footer>
 
     </body>
