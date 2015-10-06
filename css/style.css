@@ -1,3 +1,67 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?45022451');
+    src: url('../font/fontello.eot?45022451#iefix') format('embedded-opentype'),
+    url('../font/fontello.woff?45022451') format('woff'),
+    url('../font/fontello.ttf?45022451') format('truetype'),
+    url('../font/fontello.svg?45022451#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?45022451#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-call:before { content: '\e800'; } /* '' */
+.icon-skype:before { content: '\e801'; } /* '' */
+.icon-email:before { content: '\e802'; } /* '' */
+.icon-vk:before { content: '\e803'; } /* '' */
+.icon-github:before { content: '\e804'; } /* '' */
+.icon-facebook:before { content: '\e805'; } /* '' */
+.icon-linkedin:before { content: '\e806'; } /* '' */
+
 body {
     margin: 0 auto;
     width: 788px;
@@ -15,7 +79,7 @@ body {
 
 a {
     text-decoration:none;
-   color: #664958;
+    color: #664958;
 }
 
 *{outline: none;}
@@ -25,13 +89,12 @@ ul li{list-style: none;}
 .centering-container {
     width: 768px;
     margin: 0 auto;
-    padding: 0 10px;
 }
 
 header {
     position: fixed;
-    max-width: 788px;
-    margin: 0 auto;
+    width: 768px;
+    margin: 0 10px;
     padding: 0;
     top: 0;
     color: #ffffff;
@@ -57,17 +120,17 @@ header .logo {
     width: 150px;
     font-weight: 700;
     text-align: left;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-    padding-left: 10px;
+    margin: 0;
+    padding-top: 18px;
+    padding-left: 20px;
 }
 
 header nav {
     float: right;
     width: 400px;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
     text-align: right;
 }
 
@@ -77,12 +140,20 @@ header nav {
     padding: 0 10px;
 }
 
-.main-content section {padding-top: 40px;}
+.main-content {
+    width: 768px;
+    margin: 0 auto;
+}
+
+.main-content section {
+    width: 768px;
+    padding-top: 40px;
+}
 
 .main-content .business-card {
-    background-color: #C4B4BC;
     padding-top: 65px;
     padding-bottom: 25px;
+    background-color: #C4B4BC;
 }
 
 .business-card .photo {
@@ -134,6 +205,7 @@ header nav {
 .portfolio,
 .contact,
 .about {
+    margin-bottom: 0;
     text-align: center;
     color: #664958;
 }
@@ -146,7 +218,10 @@ header nav {
     text-shadow: 1px 1px 1px #C4B4BC;
 }
 
-.about {text-align: left;}
+.about {
+    padding: 0 20px;
+    text-align: left;
+}
 
 ul.projects {
     margin: 0;
@@ -155,23 +230,98 @@ ul.projects {
 
 ul.projects li {
     display: inline-block;
-    vertical-align: baseline;
-    margin: 5px;
+    vertical-align: top;
+    margin: 10px;
+}
+
+ul.projects img {
+    width: 227px;
+    border: 1px solid #C4B4BC;
+}
+
+ul.projects a:hover img {
+    box-shadow: 0 5px 20px 0 rgba(142, 107, 124, 1);
+}
+
+.about .title {
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-top: 10px;
+}
+
+.about a {
+    color: #C4B4BC;
+    text-decoration: underline;
+}
+
+.top-block {
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .phone, .email, .skype {
     display: inline-block;
     vertical-align: top;
+    text-align: center;
     margin: 10px;
+    padding: 12px;
+    width: 200px;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #C4B4BC;
+    text-shadow: 1px 1px 2px #6F5060;
+    box-shadow: 0px 0px 2px 1px #6F5060;
 }
+
+.email {padding: 12px 8px;}
+
+.icon-email:before {
+    margin-right: 10px;
+}
+
+.bottom-block {margin-bottom: 50px;}
 
 .bottom-block a {
     display: inline-block;
     vertical-align: top;
+    text-align: center;
     margin: 10px;
+    padding: 8px 0;
+    width: 40px;
+    box-sizing: border-box;
+    border-radius: 15%;
+    color: #ffffff;
+    background-color: #C4B4BC;
+    text-shadow: 1px 1px 2px #6F5060;
+    box-shadow: 0px 0px 5px 1px #6F5060;
+}
+
+.icon-vk:before {
+    margin-left: 0;
+}
+
+.icons:hover:before {
+    color: #6F5060;
+    text-shadow: none;
+}
+
+.icons:active:before {
+    color: #C4B4BC;
+    text-shadow: 1px 1px 2px #6F5060;
+}
+
+.icons:active {
+    background-color: #D4C8CD;
+    box-shadow: 0px 0px 2px 1px #AC98A2;
 }
 
 footer {
+    width: 748px;
+    margin: 0 auto;
     padding: 20px 10px;
     font-size: 16px;
     color: #ffffff;

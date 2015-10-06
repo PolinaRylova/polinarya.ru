@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Frontend Developer - Polina Rylova</title>
-        <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" type="text/css">
-    </head>
+    <meta charset="UTF-8">
+    <title>Frontend Developer - Polina Rylova</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" type="text/css">
+</head>
     <body>
 
-        <header>
-            <div class="centering-container clearfix">
-                <div class="logo"><a href="#business-card">Polina Rylova</a></div>
-                <nav>
+        <header class="clearfix">
+            <div class="logo"><a href="#business-card">Polina Rylova</a></div>
+            <nav>
                     <ul class="header-navigation">
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
                         <li><a href="#about">About me</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
         </header>
 
         <div class="main-content">
@@ -53,48 +51,61 @@
                 <div class="centering-container">
                     <h1>Portfolio</h1>
                     <ul class="projects">
-                        <li><a href="#">bsh-index</a></li>
-                        <li><a href="#">bsh-catalog</a></li>
-                        <li><a href="#">bsh-catalog-item</a></li>
-                        <li><a href="#">bsh-price</a></li>
-                        <li><a href="#">bsh-login</a></li>
-                        <li><a href="#">bsh-map</a></li>
-                        <li><a href="#">techm-index</a></li>
-                        <li><a href="#">techm-catalog</a></li>
-                        <li><a href="#">techm-contacts</a></li>
-                        <li><a href="#">techm-write-us</a></li>
-                        <li><a href="#">techm-cart-add</a></li>
-                        <li><a href="#">my-site</a></li>
+                        <li>
+                            <a href="../barbershop/index.html"><img src="img/bsh-index.jpg" width="227" height="277" title="My projects"></a>
+                        </li>
+                        <li>
+                            <a href="../barbershop/catalog.html"><img src="img/bsh-cat.jpg" width="227" height="277" title="My projects"></a>
+                        </li>
+                        <li>
+                            <a href="../barbershop/catalog-item.html"><img src="img/bsh-item.jpg" width="227" height="277" title="My projects"></a>
+                        </li>
+                        <li>
+                            <a href="../technomart/index.html"><img src="img/tm-index.jpg" width="227" height="500" title="My projects"></a>
+                        </li>
+                        <li>
+                            <a href="../technomart/catalog.html"><img src="img/tm-cat.jpg" width="227" height="500" title="My projects"></a>
+                        </li>
+                        <li>
+                            <a href="index.html"><img src="img/my-site.jpg" width="227" height="" title="My projects"></a>
+                        </li>
                     </ul>
-                </div>
-            </section>
-            <section class="contact" id="contact">
-                <div class="centering-container">
-                    <h1>Contact me</h1>
-                    <div class="top-block">
-                        <div class="phone">+7(982)344-75-80</div>
-                        <div class="email">mail@polinarya.ru</div>
-                        <div class="skype">PolinaRylova</div>
-                    </div>
-                    <div class="bottom-block">
-                        <a href="#" class="icons icon-vk" title="Vkontakte">vk</a>
-                        <a href="#" class="icons icon-facebook" title="Facebook">fb</a>
-                        <a href="#" class="icons icon-linkedin" title="LinkedIn">in</a>
-                        <a href="#" class="icons icon-github" title="GitHub">github</a>
-                    </div>
                 </div>
             </section>
             <section class="about" id="about">
                 <div class="centering-container">
                     <h1>About me</h1>
-                    <p><b>Education: </b>
-                        Chelyabinsk State University.
-                        2006-2011 Diploma in Philology.
-                        Qualified as Teacher of Russian and literature, pedagogue.
+                    <p class="title">Education:</p>
+                    <p>
+                       Chelyabinsk State University. 2006-2011. Diploma in Philology.
+                       Qualified as Teacher of Russian and literature, pedagogue.
                     </p>
-                    <p><b>Personality: </b>Sociable, hardworking, responsible, perfectionist.</p>
-                    <p><b>Interests: </b>Arts, photography, cooking, сycling, skiing.</p>
-                    <p><b>Family: </b>married, one child.</p>
+                    <p>
+                       <a href="https://htmlacademy.ru/">HTML Academy</a>
+                       2014-2016. Frontend Developer.
+                    </p>
+                    <p class="title">Personality:</p>
+                    <p>Sociable, hardworking, responsible, perfectionist.</p>
+                    <p class="title">Interests:</p>
+                    <p>Arts, photography, cooking, сycling, skiing.</p>
+                    <p class="title">Family:</p>
+                    <p>Married, one child.</p>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="centering-container">
+                    <h1>Contact</h1>
+                    <div class="top-block">
+                        <div class="phone icon-call">+7(982)344-75-80</div>
+                        <div class="email icon-email">mail@polinarya.ru</div>
+                        <div class="skype icon-skype">PolinaRylova</div>
+                    </div>
+                    <div class="bottom-block">
+                        <a href="https://vk.com/polinarylova" class="icons icon-vk" title="Vkontakte"></a>
+                        <a href="http://www.facebook.com/RylovaPolina" class="icons icon-facebook" title="Facebook"></a>
+                        <a href="https://ru.linkedin.com/in/rylovapolina" class="icons icon-linkedin" title="LinkedIn"></a>
+                        <a href="https://github.com/PolinaRyA" class="icons icon-github" title="GitHub"></a>
+                    </div>
                 </div>
             </section>
         </div>
