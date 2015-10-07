@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
     <meta charset="UTF-8">
-    <title>Frontend Developer - Polina Rylova</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+        <title>Frontend Developer - Polina Rylova</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" type="text/css">
@@ -10,14 +12,16 @@
     <body>
 
         <header class="clearfix">
-            <div class="logo"><a href="#business-card">Polina Rylova</a></div>
-            <nav>
+            <div class="centering-container">
+                <div class="logo"><a href="#business-card">Polina Rylova</a></div>
+                <nav>
                     <ul class="header-navigation">
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#about">About me</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+            </div>
         </header>
 
         <div class="main-content">
@@ -32,11 +36,11 @@
                                 <li>CSS3</li>
                                 <li>JS</li>
                             </ul>
-                            <ul class="ul-2">
+                            <!--<ul class="ul-2">
                                 <li>Bootstrap</li>
                                 <li>JQuery</li>
                                 <li>Angular JS</li>
-                            </ul>
+                            </ul>-->
                             <ul class="ul-3">
                                 <li>Cross Browser</li>
                                 <li>Responsive</li>
@@ -52,22 +56,32 @@
                     <h1>Portfolio</h1>
                     <ul class="projects">
                         <li>
-                            <a href="../barbershop/index.html"><img src="img/bsh-index.jpg" width="227" height="277" title="My projects"></a>
+                            <a href="../barbershop/index.html" data-title="Barbershop"><img class="short-image" src="img/bsh-index.jpg" width="225" height="275" alt=""></a>
                         </li>
                         <li>
-                            <a href="../barbershop/catalog.html"><img src="img/bsh-cat.jpg" width="227" height="277" title="My projects"></a>
+                            <a href="../barbershop/index.html" data-title="Barbershop login-form"><img class="short-image" src="img/bsh-login-form.jpg" width="225" height="275" alt=""></a>
                         </li>
                         <li>
-                            <a href="../barbershop/catalog-item.html"><img src="img/bsh-item.jpg" width="227" height="277" title="My projects"></a>
+                            <a href="../barbershop/index.html" data-title="Barbershop modal-map"><img class="short-image" src="img/bsh-map.jpg" width="225" height="275" alt=""></a>
                         </li>
                         <li>
-                            <a href="../technomart/index.html"><img src="img/tm-index.jpg" width="227" height="500" title="My projects"></a>
+                            <a href="../barbershop/catalog.html" data-title="Barbershop catalog"><img class="short-image" src="img/bsh-cat.jpg" width="225" height="275" alt=""></a>
                         </li>
                         <li>
-                            <a href="../technomart/catalog.html"><img src="img/tm-cat.jpg" width="227" height="500" title="My projects"></a>
+                            <a href="../barbershop/catalog-item.html" data-title="Barbershop inner page of catalog"><img class="short-image" src="img/bsh-item.jpg" width="225" height="275" alt=""></a>
                         </li>
                         <li>
-                            <a href="index.html"><img src="img/my-site.jpg" width="227" height="" title="My projects"></a>
+                            <a href="../barbershop/price.html" data-title="Barbershop price"><img class="short-image" src="img/bsh-price.jpg" width="225" height="275" alt=""></a>
+                        </li>
+
+                        <li>
+                            <a href="../technomart/index.html" data-title="Technomart"><img class="long-image" src="img/tm-index.jpg" width="225" height="496" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="../technomart/catalog.html" data-title="Technomart catalog"><img class="long-image" src="img/tm-cat.jpg" width="225" height="496" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="index.html" data-title="My site"><img class="long-image" src="img/my-site.jpg" width="225" height="" alt=""></a>
                         </li>
                     </ul>
                 </div>
@@ -87,7 +101,7 @@
                     <p class="title">Personality:</p>
                     <p>Sociable, hardworking, responsible, perfectionist.</p>
                     <p class="title">Interests:</p>
-                    <p>Arts, photography, cooking, сycling, skiing.</p>
+                    <p>Arts, photography, cooking, cycling, skiing.</p>
                     <p class="title">Family:</p>
                     <p>Married, one child.</p>
                 </div>
@@ -101,17 +115,19 @@
                         <div class="skype icon-skype">PolinaRylova</div>
                     </div>
                     <div class="bottom-block">
-                        <a href="https://vk.com/polinarylova" class="icons icon-vk" title="Vkontakte"></a>
-                        <a href="http://www.facebook.com/RylovaPolina" class="icons icon-facebook" title="Facebook"></a>
                         <a href="https://ru.linkedin.com/in/rylovapolina" class="icons icon-linkedin" title="LinkedIn"></a>
                         <a href="https://github.com/PolinaRyA" class="icons icon-github" title="GitHub"></a>
+                        <a href="https://vk.com/polinarylova" class="icons icon-vk" title="Vkontakte"></a>
+                        <a href="http://www.facebook.com/RylovaPolina" class="icons icon-facebook" title="Facebook"></a>
                     </div>
                 </div>
             </section>
         </div>
 
         <footer>
-            <div class="copyright">Copyright © 2015 - Polina Rylova.</div>
+            <div class="centering-container">
+                <div class="copyright">Copyright © 2015 - Polina Rylova.</div>
+            </div>
         </footer>
 
     </body>
