@@ -69,19 +69,15 @@ body {
     color: #664958;
 }
 
-a, a:hover {
-    text-decoration: none;
-    color: #664958;
-}
-
-.centering-container {
-    width: 723px;
-    margin: 0 auto;
-    padding: 0 30px 0 15px;
-}
-
 header {
-    background: #2E1327;
+    background: #351B1B;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 header a {
@@ -94,13 +90,21 @@ header a:hover {
     color: #C4B4BC;
 }
 
-header a:active {
+header a:active, a:focus {
     color: #84717A;
 }
 
-.main-content .business-card {
+header .navbar-toggle {border: 1px solid #ffffff;}
+
+header span.icon-bar {background: #ffffff;}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {background: inherit;}
+
+/*section.business-card {
+    margin: 0;
     background-color: #C4B4BC;
-}
+}*/
 
 .business-card .photo img {
     box-shadow: 0px 0px 2px 1px #B5A1AB;
@@ -126,7 +130,6 @@ header a:active {
 .info .ul-1 li,
 .info .ul-2 li,
 .info .ul-3 li {
-    padding: 5px;
 }
 
 .portfolio,
@@ -147,11 +150,8 @@ header a:active {
 
 .projects li {
     position: relative;
-    display: inline-block;
-    vertical-align: top;
-    margin: 10px 5px;
 }
-
+/*
 .projects img {
     width: 225px;
     border: 1px solid #C4B4BC;
@@ -183,22 +183,15 @@ header a:active {
     box-shadow: 0 5px 20px 0 rgba(142, 107, 124, 1);
 }
 
-
+*/
 .about {
-    margin: 0;
-    text-align: left;
 }
 
 .about .title {
     font-weight: 700;
-    margin-top: 45px;
-    margin-bottom: 10px;
 }
 
 .about p {
-    margin: 0;
-    margin-top: 10px;
-    padding: 0 15px;
 }
 
 .about a {
@@ -211,42 +204,24 @@ header a:active {
 .about a:active {color: #D4C8CD;}
 
 .top-block {
-    margin-bottom: 20px;
     font-size: 20px;
 }
 
 .phone, .email, .skype {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    margin: 10px;
-    padding: 12px;
-    width: 200px;
-    box-sizing: border-box;
     color: #ffffff;
     background-color: #C4B4BC;
     text-shadow: 1px 1px 2px #6F5060;
     box-shadow: 0px 0px 2px 1px #6F5060;
-    border-radius: 5px;
 }
 
-.email {padding: 12px 8px;}
+.email {}
 
 .icon-email:before {
-    margin-right: 10px;
 }
 
-.bottom-block {margin-bottom: 50px;}
+.bottom-block {}
 
 .bottom-block a {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    margin: 10px;
-    padding: 8px 0;
-    width: 40px;
-    box-sizing: border-box;
-    border-radius: 5px;
     color: #ffffff;
     background-color: #C4B4BC;
     text-shadow: 1px 1px 2px #6F5060;
@@ -254,7 +229,6 @@ header a:active {
 }
 
 .icon-vk:before {
-    margin-left: 0;
 }
 
 .icons:hover:before {

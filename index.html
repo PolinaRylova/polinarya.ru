@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap-lessons</title>
 
-    <!-- Bootstrap -->
+    <title>Frontend Developer - Polina Rylova</title>
+
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" type="text/css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,19 +20,19 @@
 </head>
     <body>
 
-        <header class="navbar navbar-default navbar-static-top">
+        <header class="navbar navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#business-card">Polina Rylova</a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-nav">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#responsive-nav">
                         <span class="sr-only">Open navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <nav class="collapse navbar-collapse" id="responsive-nav">
-                    <ul class="nav navbar-nav header-navigation">
+                <nav class="navbar-collapse collapse navbar-right" id="responsive-nav">
+                    <ul class="nav navbar-nav header-navigation" role="menubar">
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#about">About me</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -44,8 +44,8 @@
         <main class="container-fluid">
             <section class="business-card container-fluid" id="business-card">
                 <div class="container">
-                    <div class="photo"><img class="img-circle" src="img/photo.png" width="250" height="250" alt="Photo by Polina Rylova"></div>
-                    <div class="info">
+                    <div class="photo text-center"><img class="img-circle" src="img/photo.png" width="250" height="250" alt="Photo by Polina Rylova"></div>
+                    <div class="info text-center">
                         <h1>Frontend Developer</h1>
                         <div class="skills">
                             <ul class="ul-1">
@@ -53,11 +53,11 @@
                                 <li>CSS3</li>
                                 <li>JS</li>
                             </ul>
-                            <!--<ul class="ul-2">
+                            <ul class="ul-2">
                                 <li>Bootstrap</li>
                                 <li>JQuery</li>
                                 <li>Angular JS</li>
-                            </ul>-->
+                            </ul>
                             <ul class="ul-3">
                                 <li>Cross Browser</li>
                                 <li>Responsive</li>
@@ -68,8 +68,8 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio" id="portfolio">
-                <div class="centering-container">
+            <section class="portfolio container-fluid" id="portfolio">
+                <div class="container">
                     <h1>Portfolio</h1>
                     <ul class="projects">
                         <li>
@@ -103,8 +103,8 @@
                     </ul>
                 </div>
             </section>
-            <section class="about" id="about">
-                <div class="centering-container">
+            <section class="about container-fluid" id="about">
+                <div class="container">
                     <h1>About me</h1>
                     <p class="title">Education:</p>
                     <p>
@@ -123,8 +123,8 @@
                     <p>Married, one child.</p>
                 </div>
             </section>
-            <section class="contact" id="contact">
-                <div class="centering-container">
+            <section class="contact container-fluid" id="contact">
+                <div class="container">
                     <h1>Contact</h1>
                     <div class="top-block">
                         <div class="phone icon-call">+7(982)344-75-80</div>
@@ -141,11 +141,14 @@
             </section>
         </main>
 
-        <footer>
-            <div class="centering-container">
+        <footer class="container-fluid">
+            <div class="container">
                 <div class="copyright">Copyright © 2015 - Polina Rylova.</div>
             </div>
         </footer>
-
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.js"></script>
     </body>
 </html>
