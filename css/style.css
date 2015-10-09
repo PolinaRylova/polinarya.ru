@@ -69,12 +69,14 @@ body {
     color: #664958;
 }
 
-ul {list-style: none;}
+ul {
+    padding-left: 0;
+    list-style: none;
+}
 
 h1 {margin-bottom: 20px;}
 
 header.navbar {
-    margin-bottom: 0;
     background: #351B1B;
 }
 
@@ -112,7 +114,7 @@ header span.icon-bar {background: #ffffff;}
 }
 
 section {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 30px;
 }
 
@@ -120,6 +122,8 @@ h1 {font-weight: 700;}
 
 section.business-card {
     margin: 0;
+    margin-top: -20px;
+    padding-top: 20px;
     background-color: #C4B4BC;
 }
 
@@ -139,7 +143,6 @@ section.business-card {
 .info ul.ul-1,
 .info ul.ul-2,
 .info ul.ul-3 {
-    padding-left: 0;
     color: #ffffff;
 }
 
@@ -160,6 +163,7 @@ section.business-card {
 .portfolio h1,
 .contact h1,
 .about h1 {
+    margin-bottom: 20px;
     color: #664958;
     text-shadow: 1px 1px 1px #C4B4BC;
 }
@@ -167,50 +171,27 @@ section.business-card {
 .projects {
 }
 
-.projects li {
-    position: relative;
-}
-/*
 .projects img {
-    width: 225px;
+    width: 100%;
     border: 1px solid #C4B4BC;
 }
 
-.projects .short-image {height: 275px;}
-
-.projects .long-image {height: 496px;}
-
-.projects a:hover::after {
-    content: attr(data-title);
-    position: absolute;
-    top: 30%;
-    left: 28%;
-    padding: 5px 10px;
-    width: 80px;
-    z-index: 1;
-    font-family: "Josefin Sans", "Verdana", "Geneva", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #664958;
-    text-align: center;
-    background: rgba(196, 180, 188, 0.8);
-    border: 1px solid #664958;
-    border-radius: 4px;
+.projects li {
+    margin-bottom: 20px;
 }
 
 .projects a:hover img {
     box-shadow: 0 5px 20px 0 rgba(142, 107, 124, 1);
 }
 
-*/
-.about {
-}
-
 .about .title {
+    margin-top: 30px;
+    margin-bottom: 5px;
     font-weight: 700;
 }
 
 .about p {
+    margin-bottom: 5px;
 }
 
 .about a {
@@ -247,9 +228,6 @@ section.business-card {
     box-shadow: 0px 0px 5px 1px #6F5060;
 }
 
-.icon-vk:before {
-}
-
 .icons:hover:before {
     color: #6F5060;
     text-shadow: none;
@@ -266,6 +244,8 @@ section.business-card {
 }
 
 footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 16px;
     color: #ffffff;
     text-shadow: 1px 1px 1px #000000;
