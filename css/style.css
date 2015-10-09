@@ -69,7 +69,12 @@ body {
     color: #664958;
 }
 
-header {
+ul {list-style: none;}
+
+h1 {margin-bottom: 20px;}
+
+header.navbar {
+    margin-bottom: 0;
     background: #351B1B;
 }
 
@@ -101,10 +106,22 @@ header span.icon-bar {background: #ffffff;}
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {background: inherit;}
 
-/*section.business-card {
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+h1 {font-weight: 700;}
+
+section.business-card {
     margin: 0;
     background-color: #C4B4BC;
-}*/
+}
 
 .business-card .photo img {
     box-shadow: 0px 0px 2px 1px #B5A1AB;
@@ -115,21 +132,23 @@ header span.icon-bar {background: #ffffff;}
 }
 
 .info h1 {
+    font-weight: 600;
     color: #ffffff;
 }
 
-.info .skills {
-}
-
-.info .ul-1,
-.info .ul-2,
-.info .ul-3 {
+.info ul.ul-1,
+.info ul.ul-2,
+.info ul.ul-3 {
+    padding-left: 0;
     color: #ffffff;
 }
 
 .info .ul-1 li,
 .info .ul-2 li,
 .info .ul-3 li {
+    padding:  0 5px;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 .portfolio,
