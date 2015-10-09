@@ -74,6 +74,8 @@ ul {
     list-style: none;
 }
 
+a:hover, a:active {text-decoration: none;}
+
 h1 {margin-bottom: 20px;}
 
 header.navbar {
@@ -204,28 +206,50 @@ section.business-card {
 .about a:active {color: #D4C8CD;}
 
 .top-block {
+    margin-bottom: 20px;
     font-size: 20px;
 }
 
 .phone, .email, .skype {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 10px;
+    padding: 12px;
+    width: 200px;
+    box-sizing: border-box;
     color: #ffffff;
     background-color: #C4B4BC;
     text-shadow: 1px 1px 2px #6F5060;
     box-shadow: 0px 0px 2px 1px #6F5060;
+    border-radius: 5px;
 }
 
-.email {}
+.email {padding: 12px 8px;}
 
 .icon-email:before {
+    margin-right: 10px;
 }
 
-.bottom-block {}
+.bottom-block {margin-bottom: 20px;}
 
 .bottom-block a {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 10px;
+    padding: 8px 0;
+    width: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
     color: #ffffff;
     background-color: #C4B4BC;
     text-shadow: 1px 1px 2px #6F5060;
     box-shadow: 0px 0px 5px 1px #6F5060;
+}
+
+.icon-vk:before {
+    margin-left: 0;
 }
 
 .icons:hover:before {
@@ -244,8 +268,8 @@ section.business-card {
 }
 
 footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 16px;
     color: #ffffff;
     text-shadow: 1px 1px 1px #000000;
