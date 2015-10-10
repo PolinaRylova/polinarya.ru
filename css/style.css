@@ -74,7 +74,9 @@ ul {
     list-style: none;
 }
 
-a:hover, a:active {text-decoration: none;}
+a:focus {outline: none;}
+
+a:hover, a:active, a:focus {text-decoration: none;}
 
 h1 {margin-bottom: 20px;}
 
@@ -227,7 +229,7 @@ section.business-card {
 
 .email {padding: 12px 8px;}
 
-.icon-email:before {
+.icon-email::before {
     margin-right: 10px;
 }
 
@@ -248,16 +250,16 @@ section.business-card {
     box-shadow: 0px 0px 5px 1px #6F5060;
 }
 
-.icon-vk:before {
+.icon-vk::before {
     margin-left: 0;
 }
 
-.icons:hover:before {
+.icons:hover::before {
     color: #6F5060;
     text-shadow: none;
 }
 
-.icons:active:before {
+.icons:active::before {
     color: #C4B4BC;
     text-shadow: 1px 1px 2px #6F5060;
 }
