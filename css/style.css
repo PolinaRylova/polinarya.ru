@@ -122,7 +122,7 @@ section {
     padding-bottom: 30px;
 }
 
-h1 {font-weight: 700;}
+h1 {font-weight: 600;}
 
 section.business-card {
     margin: 0;
@@ -140,7 +140,6 @@ section.business-card {
 }
 
 .info h1 {
-    font-weight: 600;
     color: #ffffff;
 }
 
@@ -276,4 +275,11 @@ footer {
     color: #ffffff;
     text-shadow: 1px 1px 1px #000000;
     background: #2E1327;
+}
+
+@media screen and (max-width: 400px) {
+    .photo img {
+        width: 200px;
+        height: 200px;
+    }
 }
