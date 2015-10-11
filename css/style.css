@@ -78,8 +78,6 @@ a:focus {outline: none;}
 
 a:hover, a:active, a:focus {text-decoration: none;}
 
-h1 {margin-bottom: 20px;}
-
 header.navbar {
     background: #351B1B;
 }
@@ -118,28 +116,32 @@ header span.icon-bar {background: #ffffff;}
 }
 
 section {
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 20px;
 }
 
-h1 {font-weight: 600;}
+h1 {
+    font-weight: 600;
+}
 
 section.business-card {
-    margin: 0;
-    margin-top: -20px;
-    padding-top: 20px;
+    padding-top: 55px;
     background-color: #C4B4BC;
 }
+
+.business-card .photo {margin-bottom: 20px;}
 
 .business-card .photo img {
     box-shadow: 0px 0px 2px 1px #B5A1AB;
 }
 
 .business-card .info {
+    margin-bottom: 20px;
     text-shadow: 1px 1px 2px #6F5060;
 }
 
 .info h1 {
+    margin-bottom: 20px;
     color: #ffffff;
 }
 
@@ -166,7 +168,7 @@ section.business-card {
 .portfolio h1,
 .contact h1,
 .about h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #664958;
     text-shadow: 1px 1px 1px #C4B4BC;
 }
@@ -205,6 +207,8 @@ section.business-card {
 .about a:hover {color: #6F5060;}
 
 .about a:active {color: #D4C8CD;}
+
+.contact h1 {margin-bottom: 20px;}
 
 .top-block {
     margin-bottom: 20px;
