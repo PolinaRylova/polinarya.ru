@@ -63,7 +63,7 @@
 .icon-linkedin:before { content: '\e806'; } /* '' */
 
 body {
-    font-family: "Josefin Sans", "Verdana", "Geneva", sans-serif;
+    font-family: "Arial", "Helvetica", sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: #664958;
@@ -84,7 +84,7 @@ header.navbar {
 
 .navbar-brand {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
     color: #ffffff;
     text-shadow: 1px 1px 1px #000000;
 }
@@ -121,7 +121,7 @@ section {
 }
 
 h1 {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 section.business-card {
@@ -171,28 +171,66 @@ section.business-card {
     color: #664958;
 }
 
-.portfolio h1,
-.contact h1,
-.about h1 {
+.portfolio h2,
+.contact h2,
+.about h2 {
     margin-bottom: 30px;
     color: #664958;
+    font-weight: 400;
     text-shadow: 1px 1px 1px #C4B4BC;
-}
-
-.projects {
-}
-
-.projects img {
-    width: 100%;
-    border: 1px solid #C4B4BC;
 }
 
 .projects li {
     margin-bottom: 20px;
 }
 
-.projects a:hover img {
+.projects-item {
+    font-size: 0;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.projects-item.only-text {
+    padding: 5px 10px;
+}
+
+.projects-item:hover {
     box-shadow: 0 5px 20px 0 rgba(142, 107, 124, 1);
+}
+
+.projects-link,
+.projects-caption {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.projects-img {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 100%;
+    border: 1px solid #C4B4BC;
+}
+
+.projects-caption {
+    padding: 0 10px 0 20px;
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.projects-heading {
+    margin-top: 7px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.projects-definition {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.projects-definition li {
+    margin-bottom: 10px;
 }
 
 .about .title {
@@ -214,11 +252,11 @@ section.business-card {
 
 .about a:active {color: #D4C8CD;}
 
-.contact h1 {margin-bottom: 20px;}
+.contact h2 {margin-bottom: 20px;}
 
 .top-block {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .phone, .email, .skype {

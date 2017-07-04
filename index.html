@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Frontend Developer - Polina Rylova</title>
+    <title>Фронтенд разработчик - Полина Рылова</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Google Analitics-->
     <script>
@@ -56,9 +55,9 @@
         <header class="navbar navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header page-scroll">
-                    <a class="navbar-brand" href="#business-card">Polina Rylova</a>
+                    <a class="navbar-brand" href="#business-card">Полина Рылова</a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#responsive-nav">
-                        <span class="sr-only">Open navigation</span>
+                        <span class="sr-only">Открыть навигацию</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -66,9 +65,9 @@
                 </div>
                 <nav class="navbar-collapse collapse navbar-right" id="responsive-nav">
                     <ul class="nav navbar-nav main-menu list-unstyled">
-                        <li class="main-menu-item"><a href="#portfolio">Portfolio</a></li>
-                        <li class="main-menu-item"><a href="#about">About me</a></li>
-                        <li class="main-menu-item"><a href="#contact">Contact</a></li>
+                        <li class="main-menu-item"><a href="#portfolio">Портфолио</a></li>
+                        <li class="main-menu-item"><a href="#about">Обо мне</a></li>
+                        <li class="main-menu-item"><a href="#contact">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -77,9 +76,9 @@
         <main class="container-fluid">
             <section class="business-card container-fluid" id="business-card">
                 <div class="container">
-                    <div class="photo text-center"><img class="img-circle" src="img/photo.png" width="750" height="750" alt="Photo by Polina Rylova"></div>
+                    <div class="photo text-center"><img class="img-circle" src="img/photo.png" width="750" height="750" alt="Фото разработчика"></div>
                     <div class="info text-center">
-                        <h1>Frontend Developer</h1>
+                        <h1>Фронтенд разработчик</h1>
                         <div class="skills">
                             <ul class="ul-1">
                                 <li>HTML5</li>
@@ -107,55 +106,122 @@
             </section>
             <section class="portfolio container-fluid" id="portfolio">
                 <div class="container">
-                    <h1 class="text-center">Portfolio</h1>
-                    <ul class="thumbnails projects row">
-                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-6 text-center">
-                            <a href="barbershop/index.html"><img src="img/bsh-index.png" alt="My project 'Barbershop'. Main page"></a>
+                    <h2 class="text-center">Портфолио</h2>
+                    <ul class="projects row">
+                        <li class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <div class="projects-item">
+                                <a href="barbershop/index.html" class="projects-link">
+                                    <img src="img/bsh-index.png" alt="My project 'Barbershop'. Main page" class="projects-img">
+                                </a>
+                                <div class="projects-caption text-left">
+                                    <h3 class="projects-heading">Барбершоп (Главная)</h3>
+                                    <ul class="projects-definition">
+                                        <li>Фиксированная (940px) кроссбраузерная Pixel Perfect вёрстка по psd-макету</li>
+                                        <li>Эффекты при наведении и клике на пункты меню и кнопки</li>
+                                        <li>Переход на страницы Прайса и Магазина</li>
+                                        <li>Открытие/сокрытие модального окна при клике на "Вход" в меню (js), анимация при неверном заполнении полей (js)</li>
+                                        <li>Интерактивная карта при клике на кнопку "Как проехать" (js)</li>
+                                        <li>Время вёрстки: один рабочий день</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
-                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-6 text-center">
-                            <a href="barbershop/index.html"><img src="img/bsh-login-form.png" alt="My project 'Barbershop'. Login-form"></a>
+                        <li class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <div class="projects-item">
+                                <a href="barbershop/catalog.html" class="projects-link">
+                                    <img src="img/bsh-catalog.png" alt="My project 'Barbershop'. Catalog page" class="projects-img">
+                                </a>
+                                <div class="projects-caption text-left">
+                                    <h3 class="projects-heading">Барбершоп (Каталог)</h3>
+                                    <ul class="projects-definition">
+                                        <li>Фиксированная (940px) кроссбраузерная Pixel Perfect вёрстка по psd-макету</li>
+                                        <li>Эффекты при наведении и клике на кнопки пагинации, кнопку фильтра, при наведении на карточку товара</li>
+                                        <li>Переход на страницы Прайса и Главную</li>
+                                        <li>Кликабельные элементы фильтра</li>
+                                        <li>Переход к странице подробного описания товара при клике на изображение/название первого товара</li>
+                                        <li>Время вёрстки: один рабочий день</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
-                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-6 text-center">
-                            <a href="barbershop/index.html"><img src="img/bsh-map.png" alt="My project 'Barbershop'. Modal-map"></a>
+                        <li class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <div class="projects-item">
+                                <a href="technomart/index.html" class="projects-link">
+                                    <img src="img/tchm-index.jpg" alt="My project 'Technomart'. Main page" class="projects-img">
+                                </a>
+                                <div class="projects-caption text-left">
+                                    <h3 class="projects-heading">Техномарт (Главная)</h3>
+                                    <ul class="projects-definition">
+                                        <li>Фиксированная (940px) кроссбраузерная Pixel Perfect вёрстка по psd-макету</li>
+                                        <li>Эффекты при наведении и клике на пункты меню, кнопки, карточки товаров и производителей</li>
+                                        <li>Переход на страницы Каталога и Контактов</li>
+                                        <li>Переход на страницу каталога при клике по кнопке "Открыть каталог" в слайдере</li>
+                                        <li>Переключение слайдов при клике по bullet-кнопкам в слайдере (css)</li>
+                                        <li>Появление модального окна оформления заказа при клике по кнопке "Купить" у первого товара</li>
+                                        <li>Переключение слайдов в блоке "Сервисы" (css)</li>
+                                        <li>Появление интерактивной карты при клике по карте</li>
+                                        <li>Появление модального окна обратной связи при клике по кнопке "Заблудились?"</li>
+                                        <li>Время вёрстки: четыре рабочих дня</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
-                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-6 text-center">
-                            <a href="barbershop/catalog.html"><img src="img/bsh-catalog.png" alt="My project 'Barbershop'. Catalog page"></a>
+                        <li class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <div class="projects-item">
+                                <a href="technomart/catalog.html" class="projects-link">
+                                    <img src="img/tchm-catalog.png" alt="My project 'Technomart'. Catalog page" class="projects-img">
+                                </a>
+                                <div class="projects-caption text-left">
+                                    <h3 class="projects-heading">Техномарт (Каталог)</h3>
+                                    <ul class="projects-definition">
+                                        <li>Эффекты при наведении и клике на пункты меню, кнопки и карточки товаров</li>
+                                        <li>Переход на Главную страницу и страницу Контактов</li>
+                                        <li>Появление модального окна оформления заказа при клике по кнопке "Купить" у первого товара</li>
+                                        <li>Кликабельные элементы фильтра в сайдбаре</li>
+                                        <li>Критическая функциональность сайта работоспособна без js (Progressive Enhancement)</li>
+                                        <li>Время вёрстки: два рабочих дня</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
-                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-6 text-center">
-                            <a href="technomart/index.html"><img src="img/tchm-modal-card.png" alt="My project 'Technomart'. Main page"></a>
-                        </li>
-                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-6 text-center">
-                            <a href="technomart/index.html"><img src="img/tchm-map.png" alt="My project 'Technomart'. Modal-map"></a>
-                        </li>
-                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-6 text-center">
-                            <a href="technomart/catalog.html"><img src="img/tchm-catalog.png" alt="My project 'Technomart'. Catalog page"></a>
+                        <li class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <div class="projects-item text-left only-text">
+                                <h3 class="projects-heading">Polinarya.ru (Данный сайт)</h3>
+                                <ul class="projects-definition">
+                                    <li>Эффекты при наведении и клике на пункты меню, соцкнопки и карточки проектов</li>
+                                    <li>Отзывчивый дизайн (Bootstrap 3)</li>
+                                    <li>jQuery Easing плагин для плавных переходов к разделам страницы</li>
+                                    <li>Google аналитика и Yandex метрика</li>
+                                    <li>Время вёрстки: два рабочих дня</li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
             <section class="about container-fluid" id="about">
                 <div class="container">
-                    <h1 class="text-center">About me</h1>
-                    <p class="title">Education:</p>
-                    <p>
-                       Chelyabinsk State University. 2006-2011. Diploma in Philology.
-                       Qualified as Teacher of Russian and literature, pedagogue.
-                    </p>
+                    <h2 class="text-center">Обо мне</h2>
+                    <p class="title">Образование:</p>
                     <p>
                        <a href="https://htmlacademy.ru/">HTML Academy</a>
-                       2014-now. Frontend Developer.
+                       2014-2017. Фронтенд разработчик.
                     </p>
-                    <p class="title">Personality:</p>
-                    <p>Sociable, hardworking, responsible, perfectionist.</p>
-                    <p class="title">Interests:</p>
-                    <p>Arts, photography, 3D-animation, bowling.</p>
-                    <p class="title">Family:</p>
-                    <p>Married, one child.</p>
+                    <p>
+                        ЧГПУ 2006-2011. Филологический факультет.
+                        Учитель русского языка и литературы.
+                    </p>
+                    <p class="title">Личностные качества:</p>
+                    <p>Коммуникабельность, усидчивость, ответственность, перфекционизм.</p>
+                    <p class="title">Интересы:</p>
+                    <p>Изобразительное искусство, фотография, анимация, боулинг.</p>
+                    <p class="title">Семейное положение:</p>
+                    <p>Замужем, один ребенок.</p>
                 </div>
             </section>
             <section class="contact container-fluid" id="contact">
                 <div class="container text-center">
-                    <h1>Contact</h1>
+                    <h2>Контакты</h2>
                     <div class="top-block">
                         <div class="phone icon-call">+7(982)344-75-80</div>
                         <div class="email icon-email">mail@polinarya.ru</div>
@@ -173,7 +239,7 @@
 
         <footer class="container-fluid">
             <div class="container">
-                <div class="copyright text-center">Copyright © 2015 - Polina Rylova</div>
+                <div class="copyright text-center">Copyright © 2015-2017 - Полина Рылова</div>
             </div>
         </footer>
 
