@@ -184,7 +184,7 @@ section.business-card {
     margin-bottom: 20px;
 }
 
-.projects-item:hover {
+.thumbnail:hover {
     box-shadow: 0 5px 20px 0 rgba(142, 107, 124, 1);
 }
 
