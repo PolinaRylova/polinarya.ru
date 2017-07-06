@@ -64,7 +64,7 @@
 
 body {
     font-family: "Arial", "Helvetica", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #664958;
 }
@@ -83,14 +83,14 @@ header.navbar {
 }
 
 .navbar-brand {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: #ffffff;
     text-shadow: 1px 1px 1px #000000;
 }
 
 header a {
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff;
     text-shadow: 1px 1px 1px #000000;
 }
@@ -149,12 +149,7 @@ section.business-card {
 .info h1 {
     margin-bottom: 20px;
     color: #ffffff;
-}
-
-.info ul.ul-1,
-.info ul.ul-2,
-.info ul.ul-3 {
-    color: #ffffff;
+    font-size: 28px;
 }
 
 .info .ul-1 li,
@@ -163,6 +158,8 @@ section.business-card {
     padding:  0 5px;
     display: inline-block;
     vertical-align: baseline;
+    color: #ffffff;
+    font-size: 16px;
 }
 
 .portfolio,
@@ -176,16 +173,21 @@ section.business-card {
 .about h2 {
     margin-bottom: 30px;
     color: #664958;
+    font-size: 24px;
     font-weight: 400;
     text-shadow: 1px 1px 1px #C4B4BC;
 }
 
-.projects li {
+.projects li:not(:last-of-type) {
     margin-bottom: 20px;
 }
 
 .thumbnail:hover {
     box-shadow: 0 5px 20px 0 rgba(142, 107, 124, 1);
+}
+
+.thumbnail:last-of-type {
+    margin-bottom: 0;
 }
 
 .projects-link--second {
@@ -201,7 +203,8 @@ section.business-card {
 .projects-heading {
     margin-top: 10px;
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 20px;
+    color: #664958;
 }
 
 .projects-definition {
@@ -215,12 +218,14 @@ section.business-card {
 
 .about .title {
     margin-top: 30px;
-    margin-bottom: 5px;
-    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .about p {
     margin-bottom: 5px;
+    color: #000000;
+    font-size: 14px;
 }
 
 .about a {
@@ -236,7 +241,7 @@ section.business-card {
 
 .top-block {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .phone, .email, .skype {
@@ -299,7 +304,7 @@ section.business-card {
 footer {
     padding-top: 15px;
     padding-bottom: 15px;
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
     text-shadow: 1px 1px 1px #000000;
     background: #2E1327;
