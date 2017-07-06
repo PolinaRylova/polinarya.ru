@@ -190,9 +190,9 @@ section.business-card {
     margin-bottom: 0;
 }
 
-.projects-link--second {
+.projects-link:not(:first-of-type) {
     display: block;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 .projects-img {
