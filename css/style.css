@@ -182,6 +182,10 @@ section.business-card {
     margin-bottom: 20px;
 }
 
+.thumbnail--horizontal-img {
+    font-size: 0;
+}
+
 .thumbnail:hover {
     box-shadow: 0 5px 20px 0 rgba(142, 107, 124, 1);
 }
@@ -190,10 +194,25 @@ section.business-card {
     margin-bottom: 0;
 }
 
-.projects-link:not(:first-of-type) {
+.projects-link {
     display: block;
-    margin-top: 14.5px;
+    margin-bottom: 14.5px;
 }
+
+.projects-link--half {
+    display: inline-block;
+    vertical-align: top;
+    width: 49.8%;
+}
+
+.projects-link--half:first-of-type {
+    margin-right: 0.2%;
+}
+
+.projects-link--half:last-of-type {
+    margin-left: 0.2%;
+}
+
 
 .projects-img {
     width: 100%;
@@ -201,7 +220,7 @@ section.business-card {
 }
 
 .projects-heading {
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 15px;
     font-size: 20px;
     color: #664958;
