@@ -188,13 +188,18 @@ section.business-card {
     box-shadow: 0 5px 20px 0 rgba(142, 107, 124, 1);
 }
 
+.projects-link--second {
+    display: block;
+    margin-top: 5px;
+}
+
 .projects-img {
     width: 100%;
     border: 1px solid #C4B4BC;
 }
 
 .projects-heading {
-    margin-top: 7px;
+    margin-top: 10px;
     margin-bottom: 15px;
     font-size: 22px;
 }
