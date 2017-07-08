@@ -178,7 +178,7 @@ section.business-card {
     text-shadow: 1px 1px 1px #C4B4BC;
 }
 
-.projects li:not(:last-of-type) {
+.projects>li:not(:last-of-type) {
     margin-bottom: 20px;
 }
 
@@ -195,32 +195,40 @@ section.business-card {
 }
 
 .projects-link {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.5%;
     margin-bottom: 14.5px;
 }
 
-.projects-link--half {
-    display: inline-block;
-    vertical-align: top;
-    width: 49.8%;
+.projects-link--desktop {
+    width: 50%;
 }
 
-.projects-link--half:first-of-type {
-    margin-right: 0.2%;
+.projects-link--tablet {
+    width: 32%;
 }
 
-.projects-link--half:last-of-type {
-    margin-left: 0.2%;
+.projects-link--mobile {
+    width: 17%;
+    margin-right: 0;
 }
 
+.projects-link--third {
+    width: 33%;
+}
+
+.projects-link--third:last-of-type {
+    margin-right: 0;
+}
 
 .projects-img {
     width: 100%;
-    border: 1px solid #C4B4BC;
+    border: 1px solid #dddddd;
 }
 
 .projects-heading {
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 15px;
     font-size: 20px;
     color: #664958;
