@@ -201,6 +201,10 @@ section.business-card {
     margin-bottom: 14.5px;
 }
 
+.projects-link--stretch {
+    width: 100%;
+}
+
 .projects-link--desktop {
     width: 50%;
 }
