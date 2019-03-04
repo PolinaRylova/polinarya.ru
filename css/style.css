@@ -60,7 +60,6 @@
 .icon-vk:before { content: '\e803'; } /* '' */
 .icon-github:before { content: '\e804'; } /* '' */
 .icon-facebook:before { content: '\e805'; } /* '' */
-.icon-linkedin:before { content: '\e806'; } /* '' */
 
 body {
     font-family: "Arial", "Helvetica", sans-serif;
@@ -272,6 +271,11 @@ section.business-card {
 
 .contact h2 {margin-bottom: 20px;}
 
+.contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .phone, .email, .skype {
     display: inline-block;
     vertical-align: top;
@@ -294,6 +298,8 @@ section.business-card {
 }
 
 .social-block {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
@@ -301,25 +307,25 @@ section.business-card {
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    margin: 10px;
+    /*margin: 10px;
     padding: 8px 0;
     width: 40px;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 5px;*/
     font-size: 16px;
-    color: #ffffff;
-    background-color: #C4B4BC;
+    color: #000000;
+    /*background-color: #C4B4BC;
     text-shadow: 1px 1px 2px #6F5060;
-    box-shadow: 0px 0px 5px 1px #6F5060;
+    box-shadow: 0px 0px 5px 1px #6F5060;*/
 }
 
-.social-block a:first-of-type {
+/*.social-block a:first-of-type {
     margin-left: 3px;
 }
 
 .icon-vk::before {
     margin-left: 0;
-}
+}*/
 
 .icons:hover::before {
     color: #6F5060;
